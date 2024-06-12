@@ -1,0 +1,47 @@
+body{
+    background: url("th.jpg");
+}
+#hole{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    top: 170px;
+    /* border: 10px solid orange; */
+    box-shadow:5px -5px 18px orange,inset 5px 5px 5px gold,2px 2px 15px red, inset 7px 7px 1px white;
+    animation: swigg 30s infinite linear;
+}
+@keyframes swigg {
+    0%{}
+    100%{
+        transform: rotateZ(16660deg);
+    }
+}
+#line{
+    width: 300px;
+    height: 15px;
+    background-color: yellow;
+    margin: auto;
+    position: relative;
+    transform: rotateZ(200deg);
+    top: 80px;
+    left: 0px;
+    z-index: 0;
+    border-radius: 35px;
+    animation: reg 1s linear infinite;
+    box-shadow: 5px 5px 25px gold,inset 2px 2px 5px red;
+    border: 10px solid orange;
+}
+@keyframes reg {
+    0%{}
+    50%{
+        left: 20px;
+    }
+    100%{
+        left: 0px;
+
+    }
+}

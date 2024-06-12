@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    /* background-color: rgba(213, 241, 213, 0.975); */
+}
+
+header {
+    border: 2px solid green;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+}
+.logoText{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(8, 121, 8);
+    margin: 5px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.left img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+}
+
+.right ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(6, 190, 6);
+}
+
+.right ul li {
+    padding: 0 20px;
+    cursor: pointer;
+}
+.right ul li a{
+    text-decoration: none;
+    color: rgb(6, 190, 6);
+}
+.right ul li a:hover{
+    color: rgb(0, 93, 0);
+    transition: all 0.1s ease-in-out;
+}
+main{
+    background-color: rgba(191, 248, 191, 0.307);
+    min-height:79vh;
+    padding: 20px 0;
+}
+.container{
+    width: 80vw;
+    margin: auto;
+}
+.container h1{
+    color: #014401;
+    font-size: 45px;
+    padding: 30px 0;
+}
+.container h2{
+    color: #014401;
+    font-size: 45px;
+    padding: 30px 0;
+}
+form{
+    padding-left: 15px;
+}
+form label{
+    font-size: 25px;
+    font-weight: 400;
+    color: #014401;
+}
+form input[type= text]{
+    width: 20vw;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: rgb(4, 34, 4);
+    position: relative;
+    bottom: 3px;
+    border-radius: 5px;
+}
+.btn{
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 3px 9px;
+    margin: 0 5px;
+}
+.gif img{
+    width: 100px;
+    margin: 20px 80px;
+}
+.btn:hover{
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 93, 0);
+    background-color: rgb(188, 249, 188);
+    padding: 10px 0;
+}
+#resultCont{
+     margin-left: 20px;
+}
+#resultCont div::first-letter{
+    text-transform: capitalize;
+    padding-left: 15px;
+   
+}
+
+@media (max-width:800px) {
+    nav{
+        flex-direction: column;
+    }
+    footer{
+        font-size: 15px;
+    }
+    .left img {
+        width: 40px;
+        height: 40px;
+        padding: 5px 0;
+    }
+    .right{
+        margin: 5px;
+    }
+    .right ul li{
+        font-size: 1.2rem;
+    }
+    .container h1,.container h2{
+        font-size: 1.5rem;
+    }
+    form input[type= text]{
+        font-size: 12px;
+        position: relative;
+    bottom: 4px;
+    width: 200px;
+    }
+}

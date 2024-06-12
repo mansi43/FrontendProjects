@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.item-center{
+    align-items: center;
+}
+.semibold{
+    font-weight: 600;
+}
+.p-2{
+    padding:5px 10px;
+}
+.my-2{
+    margin: 0 40px;
+}
+.mr-1{
+    margin-right: 20px;
+}
+.font-30{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 34px;
+}
+.font-14{
+    font-size: 14px;
+    font-weight: bold;
+}

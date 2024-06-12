@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-bg-color: rgb(76, 119, 76);
+    --font1: "Reddit Mono", monospace;
+    --font2: "Montserrat", sans-serif;
+}
+
+.max-width-1 {
+    max-width: 80vw;
+}
+
+.max-width-2 {
+    max-width: 60vw;
+}
+.justify-right{
+    justify-content:right;
+}
+.m-auto {
+    margin: auto;
+}
+
+.font1 {
+    font-family: var(--font1);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
+.btn {
+    padding: 2px 5px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: var(--font1);
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+.center{
+    text-align: center;
+}
+.btn:hover {
+    color: white;
+    background-color: var(--main-bg-color);
+}
+.my-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bold{
+    font-weight: bold;
+    font-size: 16px;
+}
+.mx-1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-input {
+    padding: 2.5px 5px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: var(--font1);
+    margin: 0px 5px;
+    margin-top: 10px;
+}

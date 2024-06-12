@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+    background-color: rgba(253, 188, 210, 0.985);
+    color: white;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color:  rgba(8, 173, 135, 0.773);
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    font-size: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+nav ul li a:hover{
+    color:rgba(61, 59, 50, 0.559);
+    transition: all 500ms;
+}
+.container {
+    min-height: 80vh;
+    /* background-color: red; */
+    width: 80vw;
+    margin: auto;
+}
+.container h1,h2{
+    margin: 20px 0;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+.container form label{
+    font-size: 25px;
+}
+.container form input[type='number'],select,label{
+    /* background-color: beige; */
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.btn{
+    width: 6vw;
+    background-color: white;
+    color: rgba(253, 188, 210, 0.985);
+    font-size: 18px;
+    font-weight: 600;
+    border: 1.5px solid rgba(253, 188, 210, 0.985);
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 10px;
+}
+.btn:hover{
+    background-color: rgba(253, 188, 210, 0.985);
+    color: white;
+}
+.output table{
+    width: 50vw;
+    text-align: center;
+    border: 2px solid rgba(253, 188, 210, 0.985) ;
+    margin: 20px 0;
+    font-size: 16px;
+}
+.output{
+    display: none;
+}
+footer {
+    text-align: center;
+    background-color: rgb(253 189 211);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+@media (max-width : 1300px) {
+   nav{
+    flex-direction: column;
+    padding: 8px 30px;
+   } 
+   nav ul li{
+    margin: 0 10px;
+   }
+   .container{
+    width: 100vw;
+    margin: 10px;
+   }
+   .container form{
+    width: 80vw;
+   }
+   .btn{
+    width: 20vw;
+   }
+   .output table{
+    width: 80vw;
+    margin: auto;
+   }
+   footer{
+    font-size: 15px;
+   }
+}

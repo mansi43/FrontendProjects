@@ -1,0 +1,81 @@
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.font-bold {
+    font-weight: bolder;
+}
+
+.my-1 {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.my-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ml-1 {
+    margin-left: 10px;
+}
+
+.pb-2 {
+    padding-bottom: 5px;
+}
+
+.text-pink {
+    color: rgba(162, 9, 89, 1);
+}
+.highlighted{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.btn {
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 17px;
+    color: white;
+    background-color: rgba(162, 9, 88, 0.816);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+    color: rgba(162, 9, 88, 0.816);
+    border: 0.5px solid rgba(162, 9, 88, 0.816);
+}
+
+.text-center {
+    text-align: center;
+}

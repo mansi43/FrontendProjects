@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas></canvas>
+<script>
+    onload = () => {
+        cvs = document.querySelector("canvas")
+        w = cvs.width = innerWidth * 2;
+        h = cvs.height = innerHeight * 2;
+        ctx = cvs.getContext("2d")
+
+        for (let i = 0; i < amount; i++) {
+            particles.push(new Particle())
+        }
+        animate()
+        setInterval(() => {
+            for (let i = 0; i < 5; i++) {
+                particles.shift()
+                particles.push(new Particle())
+            }
+        }, 1);
+    }
+    function Field(x, y) {
+        const xx = -y + w * Math.cos((x / w * 2) * Math.PI + t - Math.sin(Math.PI * t))
+        const yy = -x - h * Math.sin((y / h * 2) * Math.PI - 2 * t + Math.cos(Math.PI * t))
+        return { x: xx, y: yy }
+    }
+    var cvs, ctx, w, h, t, particles = []
+    const amount = 800, speed = 0.2, dt = 1 / 60
+    function animate() {
+        ctx.fillStyle = "rgba(0,0,0,0.05)"
+        ctx.fillRect(0, 0, w, h)
+
+        t = Date.now() / 1e3
+        particles.forEach(p => {
+            const v = Field(p.x-w/2,h/2-p.y)
+            p.x += v.x * speed * dt
+            p.y += v.y * speed * dt
+            p.draw()
+        })
+        requestAnimationFrame(animate)
+    }
+    function Particle(){
+        this.x = Math.random()*w
+        this.y =Math.random()*h
+        const a= Math.random()*180-60
+        this.color ="hsl("+a+"deg, 50%,50%)"
+
+        this.draw =()=>{
+            ctx.strokeStyle = this.color
+            ctx.strokeRect(this.x,this.y,1,1)
+        }
+    }
+</script>
+</body>
+</html>
